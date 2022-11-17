@@ -25,8 +25,25 @@ class MainActivity : AppCompatActivity() {
             // si no recoge las variables de los ed y hace el calculo
             val peso = binding.edPeso.text.toString().toDouble()
             val altura = binding.edAltura.text.toString().toDouble()/100
-            val result = String.format("%.2f", peso/(altura * altura))
-            binding.tvResultado.text = result
+            val result = peso/(altura * altura)
+
+            // si el cb hombre esta checkeado...
+            val resultText = if (binding.rb1.isChecked){
+                if (result < 18.5) "Peso inferior al normal"
+                else if (result in 18.5..24.9) "Normal"
+                else if (result in 24.9..29.9) "Sobrepeso"
+                else "Obesidad"
+            // si es el cb de mujer...
+            } else {
+                if (result < 18.5) "Peso inferior al normal"
+                else if (result in 18.5..23.9) "Normal"
+                else if (result in 24.0..28.9) "Sobrepeso"
+                else "Obesidad"
+            }
+
+            // pone los resultados en los tv
+            binding.tvResultado.text = String.format("%.2f", result)
+            binding.tvResText.text = resultText
 
         }
     }
