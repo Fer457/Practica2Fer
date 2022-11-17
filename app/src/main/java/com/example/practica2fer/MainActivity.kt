@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             if (binding.edPeso.text.isNullOrEmpty() || binding.edAltura.text.isNullOrEmpty()) {
                 Toast.makeText(
                     this,
-                    "Los campos Peso y Altura no deben estar vacíos para realizar el calculo.",
+                    getString(R.string.txtToast),
                     Toast.LENGTH_SHORT
                 ).show()
                 return@setOnClickListener
@@ -34,18 +34,18 @@ class MainActivity : AppCompatActivity() {
             // si el cb hombre esta checkeado...
             val resultText = if (binding.rb1.isChecked) {
                 when (result) {
-                    in 0.0..18.5 -> "Peso inferior al normal"
-                    in 18.5..24.9 -> "Normal"
-                    in 24.9..29.9 -> "Sobrepeso"
-                    else -> "Obesidad"
+                    in 0.0..18.5 -> getString(R.string.pesoinf)
+                    in 18.5..24.9 -> getString(R.string.pesonor)
+                    in 24.9..29.9 -> getString(R.string.sobrepeso)
+                    else -> getString(R.string.obesidad)
                 }
                 // si es el cb de mujer...
             } else {
                 when (result) {
-                    in 0.0..18.5 -> "Peso inferior al normal"
-                    in 18.5..23.9 -> "Normal"
-                    in 24.0..28.9 -> "Sobrepeso"
-                    else -> "Obesidad"
+                    in 0.0..18.5 -> getString(R.string.pesoinf)
+                    in 18.5..23.9 -> getString(R.string.pesonor)
+                    in 24.0..28.9 -> getString(R.string.sobrepeso)
+                    else -> getString(R.string.obesidad)
                 }
             }
             // pone los resultados en los tv

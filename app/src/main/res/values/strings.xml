@@ -9,4 +9,9 @@
     <string name="rb1">Hombre</string>
     <string name="rb2">Mujer</string>
     <string name="botonstr">CALCULAR</string>
+    <string name="pesoinf">Peso inferior al normal</string>
+    <string name="pesonor">Normal</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="obesidad">Obesidad</string>
+    <string name="txtToast">Los campos Peso y Altura no deben estar vacíos para realizar el calculo.</string>
 </resources>
