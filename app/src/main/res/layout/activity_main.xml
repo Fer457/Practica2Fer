@@ -106,7 +106,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnCalc"
         android:layout_width="match_parent"
-        android:layout_height="450sp"
+        android:layout_height="400sp"
         android:background="@color/gris"/>
 
     <TextView
