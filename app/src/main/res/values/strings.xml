@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Practica2Fer</string>
+    <string name="stringtv">Índice de masa corporal (IMC)</string>
+    <string name="strPeso">Introduce tu peso</string>
+    <string name="tvpeso">Peso (kg)</string>
+    <string name="tvaltura">Altura (cm)</string>
+    <string name="edpeso">Introduce peso</string>
+    <string name="edaltura">Introduce altura</string>
+    <string name="rb1">Hombre</string>
+    <string name="rb2">Mujer</string>
+    <string name="botonstr">CALCULAR</string>
+</resources>

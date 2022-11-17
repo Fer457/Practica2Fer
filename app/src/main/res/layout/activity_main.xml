@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colortv"
+        android:padding="15sp"
+        android:text="@string/stringtv"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPeso"
+        android:layout_width="90sp"
+        android:layout_height="wrap_content"
+        android:text="@string/tvpeso"
+        android:textColor="@color/colortvi"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/edPeso"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvtitle" />
+
+    <EditText
+        android:id="@+id/edPeso"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/edpeso"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edAltura"
+        app:layout_constraintStart_toEndOf="@+id/tvPeso"
+        app:layout_constraintTop_toBottomOf="@id/tvtitle" />
+
+    <TextView
+        android:id="@+id/tvAltura"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tvaltura"
+        android:textColor="@color/colortvi"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/edAltura"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPeso" />
+
+    <EditText
+        android:id="@+id/edAltura"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/edaltura"
+        android:inputType="numberDecimal"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvAltura"
+        app:layout_constraintTop_toBottomOf="@id/tvPeso" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edAltura">
+
+        <RadioButton
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb1" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rb2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:text="@string/botonstr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="130sp"
+        android:gravity="center"
+        android:textColor="@color/txtcolortv"
+        android:id="@+id/tvResultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCalc"
+        android:layout_width="match_parent"
+        android:layout_height="450sp"
+        android:background="@color/gris"/>
+
+    <TextView
+        android:textSize="40sp"
+        android:id="@+id/tvResText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
