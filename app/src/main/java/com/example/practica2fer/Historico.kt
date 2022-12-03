@@ -3,22 +3,29 @@ package com.example.practica2fer
 object Historico {
     val pesos : MutableList<Peso> = mutableListOf(
         Peso(
-            24.69,
-            "Normal",
-            "Masculino",
-            "Enero",
+            30.0,
+            "Hombre",
+            "22-3-2021",
+            "Obesidad",
         ),
         Peso(
-            18.5,
-            "Bajo Peso",
-            "Femenino",
-            "Febrero",
+            10.0,
+            "Hombre",
+            "22-4-2021",
+            "Peso inferior al normal",
         ),
         Peso(
-            29.9,
+            400.0,
+            "Hombre",
+            "20-12-2020",
+            "Obesidad",
+
+            ),
+        Peso(
+            24.9,
+            "Mujer",
+            "13-6-2019",
             "Sobrepeso",
-            "Masculino",
-            "Marzo",
 
         ),
     )

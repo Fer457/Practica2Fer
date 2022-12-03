@@ -16,4 +16,9 @@
     <string name="txtToast">Los campos Peso y Altura no deben estar vacíos para realizar el calculo.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="estado">Estado</string>
+    <string name="genero">Género</string>
+    <string name="fecha">Fecha</string>
+    <string name="imc">Imc</string>
+    <string name="historico">Histórico</string>
 </resources>

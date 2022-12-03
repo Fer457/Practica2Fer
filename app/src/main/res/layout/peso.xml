@@ -17,19 +17,18 @@
         android:id="@+id/root_layout_cv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/teal_700"
+        android:background="@color/teal_200"
         android:padding="10dp">
 
         <TextView
             android:id="@+id/tvImc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="a"
+            android:text="@string/imc"
             android:textSize="30sp"
-            app:srcCompat="@mipmap/ic_launcher_round"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            />
 
         <TextView
             android:id="@+id/tvFecha"
@@ -38,40 +37,37 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:layout_toEndOf="@+id/tvImc"
-            android:text="a"
-            android:textSize="30sp"
-            android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@id/tvImc"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:text="@string/fecha"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/tvGenero"
+            android:id="@+id/tvEstado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvFecha"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/tvImc"
-            android:text="a"
-            android:textSize="30sp"
+            android:layout_toEndOf="@id/tvFecha"
+            android:text="@string/estado"
+            android:textSize="20sp"
             android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@id/tvFecha"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="@id/tvImc"
+            app:layout_constraintStart_toStartOf="parent" />
+
         <TextView
-            android:id="@+id/tvEstado"
+            android:id="@+id/tvGenero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tvGenero"
+            android:layout_below="@id/tvEstado"
             android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/tvGenero"
-            android:text="a"
-            android:textSize="30sp"
+            android:layout_toEndOf="@id/tvEstado"
+            android:text="@string/genero"
+            android:textSize="15sp"
             android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@id/tvGenero"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/tvEstado"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
