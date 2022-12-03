@@ -14,4 +14,6 @@
     <string name="sobrepeso">Sobrepeso</string>
     <string name="obesidad">Obesidad</string>
     <string name="txtToast">Los campos Peso y Altura no deben estar vacíos para realizar el calculo.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
