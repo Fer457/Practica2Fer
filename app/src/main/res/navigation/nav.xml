@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/myImc">
+    <fragment
+        android:id="@+id/recyclerView"
+        android:name="com.example.practica2fer.RecyclerView"
+        android:label="fragment_recycler_view"
+        tools:layout="@layout/fragment_recycler_view" >
+        <action
+            android:id="@+id/action_recyclerView_to_myImc"
+            app:destination="@id/myImc" />
+    </fragment>
+    <fragment
+        android:id="@+id/myImc"
+        android:name="com.example.practica2fer.MyImc"
+        android:label="fragment_my_imc"
+        tools:layout="@layout/fragment_my_imc" >
+        <action
+            android:id="@+id/action_myImc_to_recyclerView"
+            app:destination="@id/recyclerView" />
+    </fragment>
+</navigation>
